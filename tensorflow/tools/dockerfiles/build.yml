@@ -1,0 +1,11 @@
+---
+
+version: '3.7'
+services:
+  tf:
+    build:
+      context: .
+      dockerfile: ./dockerfiles/gpu.Dockerfile
+      args:
+        PYTHON_VERSION: 3.7
+    image: softwrdev/tensorflow
